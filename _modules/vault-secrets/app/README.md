@@ -3,15 +3,13 @@
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_hcp"></a> [hcp](#requirement\_hcp) | ~> 0.72.1 |
+No requirements.
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_hcp"></a> [hcp](#provider\_hcp) | 0.72.1 |
+| <a name="provider_hcp"></a> [hcp](#provider\_hcp) | n/a |
 
 ## Modules
 

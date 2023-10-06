@@ -1,26 +1,4 @@
 # ------------------------------------------------------------------------------
-# Variables
-# ------------------------------------------------------------------------------
-variable "app_name" {
-  type        = string
-  description = "The Vault Secrets App name."
-}
-
-variable "description" {
-  type        = string
-  description = "The Vault Secrets app description."
-  default     = ""
-}
-
-# ------------------------------------------------------------------------------
-# Resource
-# ------------------------------------------------------------------------------
-resource "hcp_vault_secrets_app" "this" {
-  app_name    = var.app_name
-  description = var.description
-}
-
-# ------------------------------------------------------------------------------
 # Outputs
 # ------------------------------------------------------------------------------
 output "app_name" {

@@ -1,20 +1,9 @@
-# ------------------------------------------------------------------------------
-# Variables
-# ------------------------------------------------------------------------------
-variable "secrets" {
-  type = list(object({
-    app_name     = string
-    secret_name  = string
-    secret_value = string
-  }))
-}
-
 locals {
   secrets = { for s in var.secrets : s.secret_name => s }
 }
 
 # ------------------------------------------------------------------------------
-# Resource
+# Resources
 # ------------------------------------------------------------------------------
 resource "hcp_vault_secrets_secret" "this" {
   for_each = local.secrets

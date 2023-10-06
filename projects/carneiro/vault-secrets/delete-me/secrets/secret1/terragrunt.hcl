@@ -2,8 +2,12 @@ include {
   path = find_in_parent_folders()
 }
 
+terraform {
+  source = "${get_repo_root()}//_modules/vault-secrets/secret"
+}
+
 dependency "app" {
-  config_path = "../../definition/"
+  config_path = "../../_definition/"
 }
 
 inputs = {

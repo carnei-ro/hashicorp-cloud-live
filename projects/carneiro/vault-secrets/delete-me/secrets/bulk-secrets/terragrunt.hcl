@@ -2,6 +2,10 @@ include {
   path = find_in_parent_folders()
 }
 
+terraform {
+  source = "${get_repo_root()}//_modules/vault-secrets/bulk-secrets"
+}
+
 dependency "app" {
   config_path = "../../_definition/"
 }
