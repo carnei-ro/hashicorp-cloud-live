@@ -62,6 +62,7 @@ retry_sleep_interval_sec = 61
 
 retryable_errors = [
   "(?s).*oauth2: cannot fetch token: 403 Forbidden.*",
+  "(?s).*exceeded the rate limit of .*",
 ]
 
 inputs = {

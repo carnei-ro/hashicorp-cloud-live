@@ -8,7 +8,7 @@ dependency "app" {
 
 inputs = {
   secrets = [
-    for s in range(1, 201) :
+    for s in range(1, 120) :
 
     {
       app_name    = dependency.app.outputs.app_name
